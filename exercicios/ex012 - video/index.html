@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+    <style>
+        video {
+            width: 500px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Esses vídeos estão hospedados no meu próprio servidor</p>
+    <!-- Tente carregar sempre o menor primeiro -->
+    <video controls poster="midia/limoes-tamb.png">
+        <source src="midia/limoes.mp4" type="video/mp4">
+        <source src="midia/limoes.mkv" type="video/mkv">
+        <source src="midia/limoes.webm" type="video/webm">
+        <p>Seu navegador não é compativel com videos. <a href="midia/limoes.mp4">Clique aqui para baixar</a></p>
+    </video>
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=trXjjzqPTjDgHqhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <video src="https://occ-0-7348-3852.1.nflxso.net/so/soa1/499/e5ef33d944a80140aaf966543c4e00ec.mp4?v=1&e=1759723774&t=JD6c-Uh5PCDvZHMAFuTUC3DWkZI" controls></video>
+</body>
+</html>

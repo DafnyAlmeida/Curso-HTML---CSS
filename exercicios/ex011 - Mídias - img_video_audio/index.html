@@ -6,8 +6,27 @@
     <title>Mídias</title>
 </head>
 <body>
-    <h1>Mídias</h1>
-    <h2>Imagens dinâmicas</h2>
-    
+    <h1>Imagens dinâmicas</h1>
+    <p>Essa página pode ser aberta em dispositivos diferentes (aumente ou diminua o navegador)</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem grande">
+    </picture>
+  <!-- O navegador lê o <picture> de cima para baixo.
+    Ele verifica cada <source>:
+    Se a largura da tela for maior ou igual a 800px, ele usa imagem-grande.webp (Porque ela precisa de um minimo de 800px para carregar)
+    Se for menor que 800px, ele usa imagem-pequena.webp.
+    Se o navegador não suportar WebP, ele ignora os <source> e usa o <img> final como fallback (imagem padrão). -->
+    <h1>Reprodução de áudio em HTML5</h1>
+    <p>Vamos aprender a reproduzir áudio</p>
+    <audio src="midia/interestelar.mp3" autoplay controls muted></audio>
+    <audio preload="metadata" controls autoplay>
+        <source src="midia/interestelar.mp3" type="audio/mpeg">
+        <source src="midia/interestelar.ogg" type="audio/ogg">
+        <source src="midia/interestelar.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/interestelar.mp3"></a>Clique aqui para baixar o áudio</p>
+    </audio>
+    <!-- Mp3, WAV, OGG -->
 </body>
 </html>

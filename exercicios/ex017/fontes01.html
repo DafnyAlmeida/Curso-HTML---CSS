@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        /* Safe font combinations - São fontes que tem uma caracteristica como ter serifa ou não ter serifa e não uma fonte especifica */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* Medidas relativas: em (relativa ao M maisculo de uma fonte), ex, rem, vw, vh, %  
+            Medidas absolutas: cm, nm, in (polegada), pt, pc, px*/
+            /* 16px é geralmete o tamanho padrão e igual a 1em */
+            font-size: 1em;
+            font-weight: 500;
+            font-style: italic;
+            text-decoration: underline;
+        }
+        /* Aqui ele esta carregando qualquer fonte sem serifa */
+        h1, h2 {
+            font: italic bolder 3em "Work Sans", sans-serif;
+            /* Shorthand font - font-style, wwight, size, family */
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit id aliquam minus, adipisci laborum hic inventore a aperiam esse incidunt quam delectus commodi ipsam modi veniam ex? Expedita, enim dicta! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda necessitatibus quos tempore reprehenderit aliquid repellat quam quidem temporibus culpa exercitationem minus sint, beatae officiis eaque voluptas harum porro magnam incidunt?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat eligendi voluptatum obcaecati! Expedita reprehenderit doloremque voluptatem deleniti molestias, exercitationem placeat, blanditiis veniam odit esse eligendi illum ipsa, sapiente at quia!</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorem modi molestias, laborum debitis quaerat quidem. Illum delectus quae labore sapiente praesentium in laboriosam adipisci reprehenderit et? Dolor, distinctio voluptatem!</p>
+    
+</body>
+</html>
