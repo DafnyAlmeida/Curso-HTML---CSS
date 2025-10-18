@@ -1,3 +1,14 @@
 {
-    "liveServer.settings.port": 5501
+    "editor.fontSize": 22,
+    "editor.wordWrap": "on",
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "mdb.mcp.server": "prompt",
+    "workbench.editorAssociations": {
+        "*.pdf": "default"
+    },
+    "files.autoSave": "afterDelay",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.inlineSuggest.enabled": false,
+    "workbench.colorTheme": "Dracula At Night"
 }

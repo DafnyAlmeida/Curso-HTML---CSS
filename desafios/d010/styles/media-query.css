@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) {
+    aside > ul {
+        columns: 1;
+    }
+    
+}
